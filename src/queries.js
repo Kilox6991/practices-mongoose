@@ -1,10 +1,21 @@
 const Book = require('./book');
 
-const bookByTitle = (title) => {};
+const bookByTitle = (title) => {
+	const book = Book.findOne({title})
+	return book
+};
 
-const booksByGenre = (genreId) => {};
+const booksByGenre = async (genreId) => {
+	const book = await Book.find.toString({genreId})
+	return book
+};
 
-const booksByPageCount = (maxPageCount, minPageCount) => {};
+const booksByPageCount = (maxPageCount, minPageCount) => {
+	const books = Book.find({
+		pageCount: { $gte: minPageCount, $lte: maxPageCount }
+	  });
+	  return books
+};
 
 const fullBookById = (id) => {};
 
