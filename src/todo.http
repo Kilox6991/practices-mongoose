@@ -1,7 +1,7 @@
   
 @baseUrl = http://localhost:9000
   
-GET {{baseUrl}}/todo/643fd81f4bb5b763878a60aa
+GET {{baseUrl}}/todo/64b4e495cb2efff5a5d2a673
   
 ###
 
@@ -14,14 +14,14 @@ content-type: application/json
 
 {
   "todo": {
-    "title": "Task 1",
-    "description": "Task description 1" 
+    "title": "Task 2",
+    "description": "Task description 2" 
   }
 }
   
 ###
 
-PUT {{baseUrl}}/todo/643fd81f4bb5b763878a60aa
+PUT {{baseUrl}}/todo/64b4e495cb2efff5a5d2a673
 content-type: application/json
 
 {
@@ -33,5 +33,5 @@ content-type: application/json
   
 ###
 
-DELETE {{baseUrl}}/todo/643fd81f4bb5b763878a60aa
+DELETE {{baseUrl}}/todo/64b4e495cb2efff5a5d2a673
   
